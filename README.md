@@ -9,7 +9,7 @@ all credit goes to Matt Greer: http://www.mattgreer.org/articles/promises-in-wic
 
 ---
 
-Support of Promise:
+## Support of Promise:
 
 http://stackoverflow.com/questions/21564993/native-support-for-promises-in-node-js
 
