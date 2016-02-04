@@ -1,3 +1,7 @@
+// Our naive, poor promise implementation must use asynchronicity to work. 
+// It’s easy to make it fail again, 
+// just call then() asynchronously and we are right back to the callback being null again. 
+
 function Promise(fn) {
   var callback = null;
   this.then = function(cb) { 
@@ -32,7 +36,3 @@ doSomething().then(function(value) {
 		console.log("got a value", value);
 	},2);
 });
-
-// Our naive, poor promise implementation must use asynchronicity to work. 
-// It’s easy to make it fail again, 
-// just call then() asynchronously and we are right back to the callback being null again. 

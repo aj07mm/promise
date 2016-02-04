@@ -4,6 +4,9 @@ A study case of Promise.
 This is a sketch of a lecture,
 all credit goes to Matt Greer: http://www.mattgreer.org/articles/promises-in-wicked-detail/
 
+
+![Image Alt](https://mdn.mozillademos.org/files/8633/promises.png)
+
 Promise have states!
 
 	- A promise can be pending waiting for a value, or resolved with a value.
