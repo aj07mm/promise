@@ -1,4 +1,4 @@
- function fooPromise(fn) {
+function fooPromise(fn) {
   var state = 'pending';
   var value;
   var deferred = null;
@@ -66,5 +66,3 @@
 
   fn(resolve, reject);
 }
-
-module.exports = fooPromise
