@@ -79,3 +79,9 @@ setTimeout(function(){
 // doSomething().then(function(value) {
 //   console.log('Got the same value again:', value);
 // });
+
+// This is not completely true for the promise implementation in this article. 
+// If the opposite happens, ie the caller calls then() multiple times before resolve() is called, 
+// only the last call to then() will be honored. 
+// The fix for this is to keep a running list of deferreds inside of the promise instead of just one. 
+// I decided to not do that in the interest of keeping the article more simple, it’s long enough as it is :)
