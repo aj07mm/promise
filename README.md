@@ -9,6 +9,32 @@ all credit goes to Matt Greer: http://www.mattgreer.org/articles/promises-in-wic
 
 ---
 
+## Promise terminology
+
+promise   - is an object or function with a then method whose behavior conforms to this specification.
+thenable  - is an object or function that defines a then method.
+value     - is any legal JavaScript value (including undefined, a thenable, or a promise).
+exception - is a value that is thrown using the throw statement.
+reason is a value that indicates why a promise was rejected.
+
+A promise states can be:
+
+fulfilled - The action relating to the promise succeeded 
+rejected  - The action relating to the promise failed 
+pending   - Hasn't fulfilled or rejected yet 
+settled   - Has fulfilled or rejected
+
+---
+
+## Common libs out there
+
+	Q
+	when
+	WinJS
+	RSVP.js
+
+---
+
 ## Support of Promise:
 
 http://stackoverflow.com/questions/21564993/native-support-for-promises-in-node-js
@@ -29,3 +55,4 @@ If node is using the same or later version of V8 that Chrome 32 uses then it is 
 
 	- http://www.mattgreer.org/articles/promises-in-wicked-detail/
 	- http://www.html5rocks.com/en/tutorials/es6/promises/
+	- https://promisesaplus.com/
